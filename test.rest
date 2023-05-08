@@ -1,0 +1,129 @@
+GET http://google.com
+
+### Upload image
+POST http://localhost:3000/upload
+
+### Get all USERS
+GET http://localhost:3000/users
+
+### Get one USER by ID
+GET http://localhost:3000/users/6458a64682e2b43b20bf5d3a
+
+### Get one USER by name
+GET http://localhost:3000/users/
+
+### Post USERS
+POST http://localhost:3000/
+Content-Type: application/json
+
+{
+    "first_name": "super",
+    "last_name": "admin",
+    "gender": "Male",
+    "age": 99,
+    //add default value suggested by sir
+    "username": "superadmin",
+    "email": "superadmin@gmail.com",
+    "password": "admin"
+}
+
+### Patch USERS
+PATCH http://localhost:3000/643780fbd0944b3fbd046b00
+Content-Type: application/json
+
+{
+    "name": "Jann Poblador"
+}
+
+### Delete USERS
+DELETE http://localhost:3000/6458abf6d1f84b235b35912d
+Content-Type: application/json
+
+### Login USERS
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "jannpoblador98",
+    "password": "jann"
+}
+
+########################################
+########################################
+########################################
+
+### Get all MOVIES
+GET http://localhost:3000/movies
+
+### Get one MOVIE by ID
+GET http://localhost:3000/movies/
+
+### Get one MOVIE by name
+GET http://localhost:3000/movies/
+
+### Post MOVIES
+POST http://localhost:3000/movies/
+Content-Type: application/json
+
+{
+    "movieTitle": "Moana",
+    "movieRunTime": "107 minutes",
+    "movieGenre": "Adventure, Family, Fantasy, Comedy, Animation, Musical",
+    "movieDescription": "Moana Waialiki is a sea voyaging enthusiast and the only daughter of a chief in a long line of navigators. When her island's fishermen can't catch any fish and the crops fail, she learns that the demigod Maui caused the blight by stealing the heart of the goddess, Te Fiti. The only way to heal the island is to persuade Maui to return Te Fiti's heart, so Moana sets off on an epic journey across the Pacific. The film is based on stories from Polynesian mythology.",
+    "movieReleaseDate": "November 14, 2016",
+    "movieCast": "Auliʻi Cravalho, Dwayne Johnson, Rachel House, Temuera Morrison, Jemaine Clement, Nicole Scherzinger, and Alan Tudyk.",
+    "movieRating": "7.6"
+}
+
+### Patch MOVIES
+PATCH http://localhost:3000/
+Content-Type: application/json
+
+{
+    "name": "Jann Poblador"
+}
+
+### Delete MOVIES
+DELETE http://localhost:3000/
+Content-Type: application/json
+
+########################################
+########################################
+########################################
+
+### Get all REVIEWS
+GET http://localhost:3000/reviews
+
+### Get one REVIEW by ID
+GET http://localhost:3000/reviews/6458e05a323835ff2582045d
+
+### Get one REVIEW by name
+GET http://localhost:3000/reviews/
+
+### Post REVIEWS
+POST http://localhost:3000/reviews/
+Content-Type: application/json
+
+{
+    "movieReviewTitle": "Fifty Shades of Grey",
+    "reviewRating": 8.9,
+    "reviewAuthor": "Juarrie Derramas",
+    "reviewAuthorUsername": "juarriederramas",
+    "reviewComment": "Fifty Shades of Grey is a movie that attempts to explore the complexities of romantic relationships and BDSM, but ultimately falls short due to its weak plot, one-dimensional characters, and lackluster performances. While it may appeal to fans of the book series, it fails to deliver a satisfying cinematic experience for general audiences"
+}
+
+### Patch REVIEWS
+PATCH http://localhost:3000/reviews/6458e05a323835ff2582045d
+Content-Type: application/json
+
+{
+    "reviewAuthor": "Jann Mari Poblador"
+}
+
+### Delete REVIEWS
+DELETE http://localhost:3000/reviews/6458df16e91ee68452c603ec
+Content-Type: application/json
+
+########################################
+########################################
+########################################
